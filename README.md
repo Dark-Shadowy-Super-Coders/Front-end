@@ -1,3 +1,17 @@
+Built using React & tailwindcss
+
+Install node_modules/
+```
+npm install
+```
+
+Start live server
+```
+npm start run
+```
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -8,6 +8,9 @@ import CaseStudyList from './components/CaseStudies';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
+import logo from "./assets/logo.png"
+import { Helmet } from 'react-helmet';
+
 function App() {
 /*   const testimonials = [
     {
@@ -50,6 +53,9 @@ function App() {
 
   return (
     <div className="App margin-auto">
+      <Helmet>
+        <meta property="og:image" content={logo} />
+      </Helmet>
       <Navbar />
       <Hero />
       <Services />

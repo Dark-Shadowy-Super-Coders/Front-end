@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col m-auto p-4 max-w-fit items-center justify-center">
       <p className="text-md text-[#b1c0ef] text-[20px] font-semibold pb-4">Dark Shadowy Super Coders</p>
-      <ul className="text-white text-[12px] md:text-[18px] flex flex-row justify-evenly w-full max-w-5xl">
+      <ul className="text-white text-[8px] md:text-[18px] flex flex-row justify-evenly w-full max-w-5xl">
         <li className="after:content-['|'] after:text-gray-600 after:mx-2">An open organization</li>
         <li className="after:content-['|'] after:text-gray-600 after:mx-2"><a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter (Opens in new Window)" className="text-purple-400 hover:text-purple-600 focus:text-purple-600 focus:outline-none">Twitter</a></li>
         <li className="after:content-['|'] after:text-gray-600 after:mx-2"><a href="https://discord.gg/" target="_blank" rel="noreferrer" aria-label="Discord (Opens in new Window)" className="text-purple-400 hover:text-purple-600 focus:text-purple-600 focus:outline-none">Discord</a></li>

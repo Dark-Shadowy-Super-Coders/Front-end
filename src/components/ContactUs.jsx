@@ -4,7 +4,7 @@ import svg2 from '../assets/svg2.jsx';
 
 const ContactUs = () => {
   return (
-  <section className="bg-[#07001B] px-40 py-20 lg:py-[120px] overflow-hidden relative" id='contact'>
+  <section className="bg-[#07001B] w-screen px-20 lg:px-40 py-20 lg:py-[120px] overflow-hidden relative" id='contact'>
     <div className="container text-white">
         <div className="flex flex-wrap lg:justify-between -mx-4">
           <div className="w-full lg:w-1/2 xl:w-6/12 px-4">

@@ -53,7 +53,7 @@ const TestimonialList = ({ testimonials }) => {
   }, [selectedTestimonialIndex, testimonials.length]);
 
   return (
-    <div className='bg-[#07001B] w-full h-full py-32 px-4'>
+    <div className='bg-[#07001B] w-screen h-full py-32 px-4'>
       <div className='text-white text-center justify-center pt-0 sm:pt-0 md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 items-center'>
         Testimonials
       </div>

@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='fixed flex justify-between items-center h-24 w-full mx-auto px-4 text-white'>
+    <div className='flex justify-between items-center h-24 w-screen mx-auto px-8 text-white'>
       <div className='w-full grid grid-flow-col justify-start'>
         <img src={logo} alt='logo' className='h-20'/>
         {/* <h1 className='text-3xl font-bold text-[#00df9a] p-5'>DSSC</h1> */}

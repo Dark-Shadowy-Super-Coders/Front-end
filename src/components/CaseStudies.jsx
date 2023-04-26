@@ -4,8 +4,8 @@ import {BsFillArrowRightSquareFill, BsFillArrowLeftSquareFill} from 'react-icons
 const CaseStudy = ({ index, org, category, details }) => {
 
   return (
-    <div className="h-80 w-full flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xxl bg-gradient-to-r from-[#941b52] to-[#443ba5] p-1 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-      <div className="h-80 w-full flex flex-col justify-center bg-[#061418] px-8 py-10 lg:h-[28rem]">
+    <div className="h-[31rem] md:h-80 w-full flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xxl bg-gradient-to-r from-[#941b52] to-[#443ba5] p-1 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+      <div className="h-[31rem] md:h-80 w-full flex flex-col justify-center bg-[#061418] px-8 py-10 lg:h-[28rem]">
         <p className="text-5xl text-yellow-300 font-semibold pb-4">{index}</p>
         {/* <p className="text-sm text-yellow-300 pb-2">{category}</p> */}
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex flex-row">{org}

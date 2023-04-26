@@ -4,7 +4,7 @@ import hero from '../assets/hero.svg'
 
 const Hero = () => {
   return (
-    <div className='flex items-center w-full h-screen'>
+    <div className='flex items-center w-screen h-screen'>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 text-white' id='home'>
         <img className='w-[500px] sm:scale-[1.5] md:scale-[1.5] lg:scale-[1.5] xl:scale-[1.5] xl:rounded-full mx-auto my-4' src={hero} alt='/' />
 

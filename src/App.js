@@ -3,13 +3,13 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
-import TestimonialList from './components/Testimonials';
+/* import TestimonialList from './components/Testimonials'; */
 import CaseStudyList from './components/CaseStudies';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
 function App() {
-  const testimonials = [
+/*   const testimonials = [
     {
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       author: 'John Doe',
@@ -25,7 +25,7 @@ function App() {
       author: 'Bob Johnson',
       image: 'https%3A%2F%2Fblog.hubspot.com%2Fservice%2Ftestimonial-page-examples&psig=AOvVaw1fHG8cniJnzTeQjD9LrVly&ust=1682253496383000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiP_OPAvf4CFQAAAAAdAAAAABAE'
     }
-  ];
+  ]; */
 
   const caseStudies = [
     {
@@ -54,7 +54,7 @@ function App() {
       <Hero />
       <Services />
       <About />
-      <TestimonialList testimonials={testimonials}/>
+      {/* <TestimonialList testimonials={testimonials}/> */}
       <CaseStudyList casestudies={caseStudies} />
       <ContactUs />
       <Footer />

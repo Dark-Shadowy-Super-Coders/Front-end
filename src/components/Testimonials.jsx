@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill} from 'react-icons/bs';
-import client from '../assets/client.jpg'
 
 const Testimonial = ({ text, author, image }) => {
   return (
     <div className='relative h-full'>
-      <div className="bg-[#262A55] rounded-[16px] shadow-lg overflow-hidden mx-auto mb-4 max-w-lg h-52 relative">
+      <div className="bg-[#262A55] rounded-[16px] shadow-lg overflow-hidden mx-auto mb-4 max-w-lg h-64 relative">
         <div className="px-8 py-12">
           <p className="text-white font-medium text-lg mb-2">{text}</p>
-          <p className="text-sm text-[#ffeb06]">{author}</p>
+          <p className="text-sm ml-0 m-3 font-bold text-[#ffeb06]">- {author}</p>
         </div>
       </div>
       <div className="absolute top-[-36px] left-1/2 transform -translate-x-1/2 bg-[#080c15] rounded-full p-1">
-        <img src={client} alt="testimonial author" className="rounded-full border-4 border-[#0F172A]/30 w-16 h-16"/>
+        <img src={image} alt="testimonial author" className="rounded-full border-4 border-[#0F172A]/30 w-16 h-16"/>
       </div>
     </div>
   );

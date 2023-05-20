@@ -50,14 +50,14 @@ function App() {
 
   return (
     <div className="App margin-auto">
-      <Navbar />
-      <Hero />
-      <Services />
-      <About />
-      <TestimonialList testimonials={testimonials}/>
-      <CaseStudyList casestudies={caseStudies} />
-      <ContactUs />
-      <Footer />
+        <Navbar />
+        <Hero />
+        <Services />
+        <About />
+        <TestimonialList testimonials={testimonials}/>
+        <CaseStudyList casestudies={caseStudies} />
+        <ContactUs />
+        <Footer />
     </div>
   );
 }

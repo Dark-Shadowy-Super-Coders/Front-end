@@ -3,29 +3,29 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
-/* import TestimonialList from './components/Testimonials'; */
+import TestimonialList from './components/Testimonials';
 import CaseStudyList from './components/CaseStudies';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
 function App() {
-/*   const testimonials = [
+  const testimonials = [
     {
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      author: 'John Doe',
-      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.hubspot.com%2Fservice%2Ftestimonial-page-examples&psig=AOvVaw1fHG8cniJnzTeQjD9LrVly&ust=1682253496383000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiP_OPAvf4CFQAAAAAdAAAAABAE'
+      text: "Dark Shadowy Super Coders provided exceptional smart contract development for our DeFi project, ensuring top-notch security and functionality. Their expertise was invaluable to our success.",
+      author: "Dr. Justin Goldston",
+      image: "https://justingoldston.com/assets/images/djg.jpg"
     },
     {
-      text: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      author: 'Jane Smith',
-      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.hubspot.com%2Fservice%2Ftestimonial-page-examples&psig=AOvVaw1fHG8cniJnzTeQjD9LrVly&ust=1682253496383000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiP_OPAvf4CFQAAAAAdAAAAABAE'
+      text: "Their Web3 solutions transformed our business operations, creating a transparent and efficient platform that gained the trust of our users. The team's professionalism and dedication were unmatched.",
+      author: "Nick Sibley",
+      image: "https://scontent-eze1-1.xx.fbcdn.net/v/t39.30808-6/245824320_3089494548036922_7788924853122259670_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=g_k3IncKf1cAX_cxs1j&_nc_ht=scontent-eze1-1.xx&oh=00_AfABTYCFvyyJPsWm8xR9I4mJmDq5ShQjkrYwMq-J05Sysg&oe=6452CE9E"
     },
     {
-      text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      author: 'Bob Johnson',
-      image: 'https%3A%2F%2Fblog.hubspot.com%2Fservice%2Ftestimonial-page-examples&psig=AOvVaw1fHG8cniJnzTeQjD9LrVly&ust=1682253496383000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLiP_OPAvf4CFQAAAAAdAAAAABAE'
+      text: "We engaged Dark Shadowy Super Coders for a security audit, and their meticulous approach helped us identify and mitigate vulnerabilities. Their insights have been crucial to maintaining our platform's integrity.",
+      author: "Daniel Gouldman",
+      image: "https://uploads-ssl.webflow.com/61e9746ea8f6561faddc28a8/627096904c5b5cafdb56770c_Daniel%20Gouldman.jpeg"
     }
-  ]; */
+  ];
 
   const caseStudies = [
     {
@@ -50,14 +50,14 @@ function App() {
 
   return (
     <div className="App margin-auto">
-      <Navbar />
-      <Hero />
-      <Services />
-      <About />
-      {/* <TestimonialList testimonials={testimonials}/> */}
-      <CaseStudyList casestudies={caseStudies} />
-      <ContactUs />
-      <Footer />
+        <Navbar />
+        <Hero />
+        <Services />
+        <About />
+        <TestimonialList testimonials={testimonials}/>
+        <CaseStudyList casestudies={caseStudies} />
+        <ContactUs />
+        <Footer />
     </div>
   );
 }

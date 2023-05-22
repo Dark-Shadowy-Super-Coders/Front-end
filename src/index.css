@@ -6,3 +6,21 @@ body {
   background-color: black;
   overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0A1010; /* Set the background color of the track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #393839; /* Set the color of the scroll thumb */
+}
+
+/* For Firefox */
+body {
+  scrollbar-color: #888 #f1f1f1; /* Set the color of the scroll thumb and track */
+  scrollbar-width: thin;
+}

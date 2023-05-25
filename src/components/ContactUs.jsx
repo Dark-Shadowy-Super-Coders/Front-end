@@ -1,8 +1,45 @@
-import React from 'react';
+import React, {useState} from 'react';
 import svg1 from '../assets/svg1.jsx';
 import svg2 from '../assets/svg2.jsx';
+import emailjs from 'emailjs-com'
 
 const ContactUs = () => {
+  
+  const [formData, setFormData] = useState({
+    client: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  
+  const handleContact = (e) => {
+    e.preventDefault();
+    // Signup for https://www.emailjs.com/ 
+    // free plan 200 mails/month
+    // change YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+    });  
+
+    setFormData({
+      client: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
+  }
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+
   return (
   <section className="bg-[#07001B] w-screen px-20 lg:px-40 py-20 lg:py-[120px] overflow-hidden relative" id='contact'>
     <div className="container text-white">
@@ -33,18 +70,18 @@ const ContactUs = () => {
           </div>
           <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
               <div className="bg-[#262A55] text-white relative rounded-lg p-8 sm:p-12 shadow-lg">
-                <form>
+                <form onSubmit={handleContact} >
                   <div className="mb-6">
-                    <input type="text" placeholder="Your Name" className="w-full rounded py-3 px-[14px] bg-[#07001B] focus:border-primary focus-visible:shadow-none"/>
+                    <input type="text" name='client' placeholder="Your Name" value={formData.client} onChange={handleChange} className="w-full rounded py-3 px-[14px] bg-[#07001B] focus:border-primary focus-visible:shadow-none"/>
                   </div>
                   <div className="mb-6">
-                    <input type="email" placeholder="Your Email" className="w-full rounded py-3 px-[14px] bg-[#07001B] focus:border-primary focus-visible:shadow-none"/>
+                    <input type="email" name='email' placeholder="Your Email" value={formData.email} onChange={handleChange} className="w-full rounded py-3 px-[14px] bg-[#07001B] focus:border-primary focus-visible:shadow-none"/>
                   </div>
                   <div className="mb-6">
-                    <input type="text" placeholder="Your Phone" className="w-full rounded py-3 px-[14px] bg-[#07001B] focus:border-primary focus-visible:shadow-none"/>
+                    <input type="text" name='phone' placeholder="Your Phone" value={formData.phone} onChange={handleChange} className="w-full rounded py-3 px-[14px] bg-[#07001B] focus:border-primary focus-visible:shadow-none"/>
                   </div>
                   <div className="mb-6">
-                    <textarea rows="6" placeholder="Your Message" className="w-full rounded py-3 px-[14px] bg-[#07001B] focus:border-primary focus-visible:shadow-none"></textarea>
+                    <textarea rows="6" name='message' placeholder="Your Message" value={formData.message} onChange={handleChange} className="w-full rounded py-3 px-[14px] bg-[#07001B] focus:border-primary focus-visible:shadow-none"></textarea>
                   </div>
                   <div className='flex justify-center'>
                     <button

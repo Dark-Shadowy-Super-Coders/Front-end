@@ -18,7 +18,7 @@ function App() {
     {
       text: "Their Web3 solutions transformed our business operations, creating a transparent and efficient platform that gained the trust of our users. The team's professionalism and dedication were unmatched.",
       author: "Nick Sibley",
-      image: "https://scontent-eze1-1.xx.fbcdn.net/v/t39.30808-6/245824320_3089494548036922_7788924853122259670_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=g_k3IncKf1cAX_cxs1j&_nc_ht=scontent-eze1-1.xx&oh=00_AfABTYCFvyyJPsWm8xR9I4mJmDq5ShQjkrYwMq-J05Sysg&oe=6452CE9E"
+      image: "https://user-images.githubusercontent.com/6126851/240930519-0068b424-21f4-41ae-a940-7299dfef8a26.png"
     },
     {
       text: "We engaged Dark Shadowy Super Coders for a security audit, and their meticulous approach helped us identify and mitigate vulnerabilities. Their insights have been crucial to maintaining our platform's integrity.",

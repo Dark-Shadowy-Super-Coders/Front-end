@@ -13,7 +13,7 @@ const Footer = () => {
           */}
 
 
-        <li className="after:content-['|'] after:text-gray-600 after:mx-2"><a href="https://github.com/Dark-Shadowy-Super-Coders" target="_blank" rel="noreferrer" aria-label="GitHub (Opens in new Window)" className="text-purple-400 hover:text-purple-600 focus:text-purple-600 focus:outline-none">GitHub</a></li>
+        <li className="after:content-['|'] after:text-gray-600 after:mx-2"><a href="https://github.com/Dark-Shadowy-Super-Coders" target="_blank" rel="noopener noreferrer" aria-label="GitHub (Opens in new Window)" className="text-purple-400 hover:text-purple-600 focus:text-purple-600 focus:outline-none">GitHub</a></li>
 
 
         <li><span className="eth-address"><a href="https://etherscan.io/address/0xC2BC2F890067C511215F9463A064221577A53E11" className="text-purple-400 hover:text-purple-700 focus:text-purple-600 focus:outline-none">dssc.eth</a></span></li>
@@ -24,3 +24,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

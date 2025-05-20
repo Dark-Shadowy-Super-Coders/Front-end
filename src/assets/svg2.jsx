@@ -1,5 +1,6 @@
 const svg2 = () => {
-  <svg
+  return (
+    <svg
     width="107"
     height="134"
     viewBox="0 0 107 134"
@@ -567,6 +568,7 @@ const svg2 = () => {
       fill="#13C296"
       />
   </svg>
-}
+  );
+};
 
 export default svg2;

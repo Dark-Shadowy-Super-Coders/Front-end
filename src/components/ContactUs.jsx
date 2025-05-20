@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import svg1 from '../assets/svg1.jsx';
-import svg2 from '../assets/svg2.jsx';
-import emailjs from 'emailjs-com'
+import React, { useState } from 'react';
+import Svg1 from '../assets/svg1.jsx';
+import Svg2 from '../assets/svg2.jsx';
+import emailjs from 'emailjs-com';
 
 const ContactUs = () => {
   
@@ -93,10 +93,10 @@ const ContactUs = () => {
                 </form>
                 <div>
                   <span className="absolute -right-10 top-[90px] z-[-1]">
-                    {svg1}
+                    <Svg1 />
                   </span>
                   <span className="absolute -left-7 -bottom-7 z-[-1]">
-                    {svg2}
+                    <Svg2 />
                   </span>
                 </div>
               </div>
@@ -107,4 +107,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default ContactUs;

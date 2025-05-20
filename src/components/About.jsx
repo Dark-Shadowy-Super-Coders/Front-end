@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
         Dark Shadowy Super Coders is a leading Web3 development firm specializing in smart contract creation, integration, and security audits. Our team of highly skilled developers and cybersecurity experts is dedicated to helping businesses unlock the full potential of blockchain technology. We provide tailored solutions for various industries, ensuring seamless functionality and robust security. Our mission is to empower businesses to innovate, build trust, and achieve growth in the Web3 space.
       </div>
     </div>
-  )
-}
+    );
+};
 
-export default About
+export default About;

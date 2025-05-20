@@ -85,7 +85,7 @@ const CaseStudyList = ({ casestudies }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CaseStudyList
+export default CaseStudyList;

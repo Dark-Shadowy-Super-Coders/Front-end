@@ -1,1 +1,1 @@
-export * from  './hero.svg'
+export { default as hero } from './hero.svg';
